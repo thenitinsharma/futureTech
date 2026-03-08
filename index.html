@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FutureTech | Technology for a Better Future</title>
+<!-- Tailwind CSS CDN with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-animations">
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'tech-blue-dark': '#0f172a',
+            'tech-blue-primary': '#1e293b',
+            'tech-green': '#22c55e',
+            'tech-green-hover': '#16a34a'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-800">
+<!-- BEGIN: Navigation -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-slate-100">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2" data-purpose="logo-container">
+<span class="text-2xl font-bold tracking-tight text-tech-blue-dark">Future<span class="text-tech-green">Tech</span></span>
+</div>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+<a class="hover:text-tech-green transition-colors" href="#home">Home</a>
+<a class="hover:text-tech-green transition-colors" href="#about">About</a>
+<a class="hover:text-tech-green transition-colors" href="#features">Features</a>
+<a class="hover:text-tech-green transition-colors" href="#contact">Contact</a>
+</div>
+<!-- CTA Button -->
+<div class="hidden md:block">
+<a class="bg-tech-blue-dark text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-slate-800 transition-all" href="#contact">Get Started</a>
+</div>
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button class="p-2 text-slate-600">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</nav>
+</header>
+<!-- END: Navigation -->
+<main>
+<!-- BEGIN: Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-tech-blue-dark" id="home">
+<!-- Background Overlay with Placeholder Image -->
+<div class="absolute inset-0 z-0 opacity-40">
+<img alt="High-quality technology background" class="w-full h-full object-cover" src="image.png"/>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+<h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in-up">
+          Building a <span class="text-tech-green">Sustainable Tomorrow</span><br/>through Innovation
+        </h1>
+<p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.2s;">
+          Empowering global progress with cutting-edge technology designed to protect our planet and enhance human potential.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+<a class="bg-tech-green hover:bg-tech-green-hover text-white px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105" href="#about">
+            Discover Our Vision
+          </a>
+<a class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg transition-all" href="#features">
+            Explore Solutions
+          </a>
+</div>
+</div>
+<!-- Decorative Shape -->
+<div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: About Section -->
+<section class="py-24 bg-white" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<h2 class="text-sm font-bold tracking-widest text-tech-green uppercase mb-4">Our Vision</h2>
+<h3 class="text-3xl md:text-4xl font-bold text-tech-blue-dark mb-6">Using technology for social good and global sustainability.</h3>
+<p class="text-lg text-slate-600 mb-6 leading-relaxed">
+              At FutureTech, we believe that the greatest challenges of our era—climate change, healthcare accessibility, and urban overcrowding—can be solved through purposeful innovation. Our goal is to bridge the gap between technical capability and environmental responsibility.
+            </p>
+<p class="text-lg text-slate-600 mb-8 leading-relaxed">
+              We focus on building tools that don't just work faster, but work better for the planet and the people who inhabit it.
+            </p>
+<div class="flex gap-4">
+<div class="text-center p-4 bg-slate-50 rounded-lg flex-1">
+<div class="text-2xl font-bold text-tech-green">100%</div>
+<div class="text-sm text-slate-500 uppercase">Green Tech</div>
+</div>
+<div class="text-center p-4 bg-slate-50 rounded-lg flex-1">
+<div class="text-2xl font-bold text-tech-green">50+</div>
+<div class="text-sm text-slate-500 uppercase">Global Partners</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Sustainability illustration" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="img1.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About Section -->
+<!-- BEGIN: Features Section -->
+<section class="py-24 bg-slate-50" id="features">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-tech-blue-dark">Innovation Pillars</h2>
+<p class="text-slate-600 mt-4 max-w-2xl mx-auto">Focusing our expertise on the sectors that matter most for the future of humanity.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature Card: Green Energy -->
+<div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group" data-purpose="feature-card">
+<div class="w-16 h-16 bg-green-100 text-tech-green rounded-2xl flex items-center justify-center mb-6 group-hover:bg-tech-green group-hover:text-white transition-colors">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h4 class="text-2xl font-bold text-tech-blue-dark mb-4">Green Energy</h4>
+<p class="text-slate-600">Revolutionary grid management systems that optimize renewable sources for zero-carbon emissions.</p>
+</div>
+<!-- Feature Card: AI for Health -->
+<div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group" data-purpose="feature-card">
+<div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h4 class="text-2xl font-bold text-tech-blue-dark mb-4">AI for Health</h4>
+<p class="text-slate-600">Harnessing machine learning to predict health risks and personalize treatment plans globally.</p>
+</div>
+<!-- Feature Card: Smart Cities -->
+<div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 group" data-purpose="feature-card">
+<div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h4 class="text-2xl font-bold text-tech-blue-dark mb-4">Smart Cities</h4>
+<p class="text-slate-600">Integrated infrastructure sensors to reduce traffic, waste, and energy consumption in urban hubs.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Features Section -->
+<!-- BEGIN: Contact Section -->
+<section class="py-24 bg-white" id="contact">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-tech-blue-dark">Contact Us</h2>
+<p class="text-slate-600 mt-4">Have a project in mind or want to join our mission? Get in touch.</p>
+</div>
+<div class="bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100">
+<form action="#" class="space-y-6" id="contact-form" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700" for="name">Full Name</label>
+<input class="w-full px-4 py-3 rounded-xl border-slate-200 focus:ring-tech-green focus:border-tech-green transition-all" id="name" name="name" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700" for="email">Email Address</label>
+<input class="w-full px-4 py-3 rounded-xl border-slate-200 focus:ring-tech-green focus:border-tech-green transition-all" id="email" name="email" placeholder="john@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-700" for="message">Message</label>
+<textarea class="w-full px-4 py-3 rounded-xl border-slate-200 focus:ring-tech-green focus:border-tech-green transition-all" id="message" name="message" placeholder="Tell us about your project..." required="" rows="5"></textarea>
+</div>
+<button class="w-full bg-tech-blue-dark text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition-all shadow-md" type="submit">
+              Send Message
+            </button>
+</form>
+</div>
+</div>
+</section>
+<!-- END: Contact Section -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-tech-blue-dark text-slate-400 py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 border-b border-slate-800 pb-12 mb-12">
+<div class="flex items-center gap-2">
+<svg class="w-6 h-6 text-tech-green" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span class="text-xl font-bold text-white">FutureTech</span>
+</div>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" data-purpose="social-icon" href="#">
+<span class="sr-only">Twitter</span>
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+<a class="hover:text-white transition-colors" data-purpose="social-icon" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+</a>
+<a class="hover:text-white transition-colors" data-purpose="social-icon" href="#">
+<span class="sr-only">GitHub</span>
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center text-sm">
+<p>© 2023 FutureTech Solutions Inc. All rights reserved.</p>
+<div class="flex gap-8 mt-4 md:mt-0">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+</body></html>
